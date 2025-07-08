@@ -30,10 +30,10 @@ end
 RegisterCommand("toggleweed", function()
     showVisuals = not showVisuals
     if showVisuals then
-        notify("INFO", "Weed markers and blip enabled.")
+        notify("INFO", _L("markers_enabled"))
         createWeedBlip()
     else
-        notify("INFO", "Weed markers and blip disabled.")
+        notify("INFO", _L("markers_disabled"))
         if DoesBlipExist(weedBlip) then
             RemoveBlip(weedBlip)
             weedBlip = nil
