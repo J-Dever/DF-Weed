@@ -8,3 +8,7 @@ Version: 1.0.0
 - you can process the weed after harvesting
 - either u sell the processed weed or u make a joint of it
 - u use qb-target or another target system that u have
+
+Dependencies
+- qb-target
+- qb-core
