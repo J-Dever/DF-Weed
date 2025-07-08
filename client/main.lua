@@ -1,4 +1,6 @@
 QBCore = exports['qb-core']:GetCoreObject()
+local Locales = {}
+dofile("locales.lua") -- adjust path if needed
 
 -- Flags & Data
 local showVisuals = true
