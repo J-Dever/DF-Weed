@@ -1,3 +1,6 @@
+local Locales = {}
+dofile("locales.lua") -- adjust path if needed
+
 QBCore = exports['qb-core']:GetCoreObject()
 
 -- Inside server.lua if needed
