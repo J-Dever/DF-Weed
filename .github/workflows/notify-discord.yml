@@ -15,4 +15,4 @@ jobs:
         curl -H "Content-Type: application/json" \
              -X POST \
              -d "{\"content\": \"🚀 A new update has been pushed to the repository: **${{ github.repository }}** by **${{ github.actor }}**.\nCommit: ${{ github.sha }}\n📁 View it here: https://github.com/${{ github.repository }}/commit/${{ github.sha }}\"}" \
-             ${{ secrets.https://discord.com/api/webhooks/1392154136966992064/kdaNUdL9a8GU8EZC_HahnAQHzYTINi8p9Tr51RP8JSfaq_0y7sQrKl4xtd20yw_UVh10 }}
+             ${{ secrets.DISCORD_WEBHOOK_URL }}
