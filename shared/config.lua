@@ -2,6 +2,12 @@ Config = {}
 
 Config.Inventory = 'auto' --- this works
 --Config.ThirdEye = 'auto' --- does not work
+Config.Locale = "en"
+
+function _L(key, ...)
+    local text = Locales[Config.Locale] and Locales[Config.Locale][key] or key
+    return string.format(text, ...)
+end
 
 
 -- Growth time in milliseconds
