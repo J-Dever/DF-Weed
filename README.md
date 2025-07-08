@@ -1,6 +1,8 @@
 # DF-Weed
 This weed script takes u back in the days of ur fivem career
 
+dowload from the latest hotfix at the releases section
+
 obs! If u need to change things then it is in the config.lua in shared folder so don't touch the other lua's if u don't know what u are doing!
 
 Dependencies
