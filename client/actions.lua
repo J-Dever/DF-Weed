@@ -12,7 +12,7 @@ local function plantWeed(location)
 
     Config.Inventory.HasItem(Config.Items.SEED, function(result)
         if not result then
-            notify("ERROR", "You don't have any weed seeds.")
+            notify("ERROR", _L("no_seeds"))
             return
         end
 
@@ -35,7 +35,7 @@ local function plantWeed(location)
             grown = false
         }
 
-        notify("SUCCESS", "Weed planted.")
+        notify("SUCCESS", _L("planted"))
     end)
 end
 
@@ -145,12 +145,12 @@ local function runWeedLoop()
                 local distance = #(coords - loc)
                 if distance <= 2.0 then
                     if not plantedPlants[loc] then
-                        DrawText3D(loc, "Press [E] to Plant Weed Seed", 0.35, 4, 0.15)
+                        DrawText3D(loc, _L("plant_prompt"), 0.35, 4, 0.15)
                         if IsControlJustPressed(0, 38) and not isOnCooldown("PLANTING") then
                             plantWeed(loc)
                         end
                     elseif plantedPlants[loc].grown then
-                        DrawText3D(loc, "Press [E] to Harvest Weed", 0.35, 4, 0.15)
+                        DrawText3D(loc, _L("plant_prompt"), 0.35, 4, 0.15)
                         if IsControlJustPressed(0, 38) and not isOnCooldown("HARVESTING") then
                             harvestWeed(loc)
                         end
