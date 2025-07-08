@@ -24,7 +24,7 @@ local function addProcessingZone()
                 type = "client",
                 event = "weed:client:processWeed",
                 icon = "fas fa-cannabis",
-                label = "Process Weed",
+                label = _L("process"),
             }
         },
         distance = 2.0
@@ -47,7 +47,7 @@ function reAddSellZone()
                 type = "client",
                 event = "weed:client:sellWeed",
                 icon = "fas fa-money-bill-wave",
-                label = "Sell Weed",
+                label = _L("sell"),
             }
         },
         distance = 2.0
@@ -69,7 +69,7 @@ local function addJointZone()
                 type = "client",
                 event = "weed:client:makeJoint",
                 icon = "fas fa-smoking",
-                label = "Roll Joint",
+                label = _L("roll_joint"),
             }
         },
         distance = 2.0
