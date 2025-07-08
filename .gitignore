@@ -1,0 +1,10 @@
+# Ignore cache and logs 
+cache/ 
+*.log 
+# VSCode settings 
+.vscode/ 
+# OS files 
+.DS_Store
+Thumbs.db
+# Node or Yarn (if applicable) 
+node_modules/ 
